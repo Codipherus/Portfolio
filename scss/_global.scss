@@ -5,7 +5,9 @@ body {
   background-color: #0c0c0c; 
 
 }
-
+b{
+  color: $teal;
+}
 p {
   line-height: 1.75;
 }
@@ -100,3 +102,4 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+

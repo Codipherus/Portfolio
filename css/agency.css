@@ -22,6 +22,10 @@ body {
   background-color: #0c0c0c;
 }
 
+b {
+  color: #1F5C5A;
+}
+
 p {
   line-height: 1.75;
 }
@@ -158,7 +162,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #1F5C5A;
+  color: #977532;
 }
 
 @media (min-width: 992px) {
@@ -187,6 +191,10 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
+}
+
+.nav-link:hover {
+  color: #977532 !important;
 }
 
 header.masthead {
@@ -246,6 +254,15 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
+}
+
+.ransford_bubble {
+  border-radius: 65%;
+  background-color: radial-gradient(#1F5C5A, transparent);
+}
+
+.intro-lead-in {
+  color: #977532 !important;
 }
 
 .service-heading {
@@ -674,7 +691,6 @@ ul.social-buttons li a {
 
 section#contact {
   background-color: #0c0c0c;
-  background-image: url("../img/Cody Added/worldblack.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -783,4 +799,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #codypidid {
   margin-top: 500px;
+}
+
+.portfolio-modal .modal-content {
+  padding: 20px 0 0 0 !important;
+  background-color: #0c0c0c;
 }
