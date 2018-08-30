@@ -7,13 +7,13 @@
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: $pink;
+    color: $teal;
     border: 0;
     background-color: $primary;
     @include heading-font;
   }
   .navbar-brand {
-    color: $pink;
+    color: $teal;
     @include script-font;
     &.active,
     &:active,
