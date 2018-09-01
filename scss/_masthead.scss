@@ -4,7 +4,6 @@ header.masthead {
   // Title font color //
   color: black;
 
-  background-image: url('../img/Cody Added/ocean1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -22,6 +21,7 @@ header.masthead {
       line-height: 22px;
       margin-bottom: 25px;
       @include serif-font;
+      
       
     }
     .intro-heading {
@@ -65,4 +65,18 @@ header.masthead {
 }
 .intro-lead-in{
   color: $pink !important;
+}
+.fullscreen-video-wrap{
+  object-fit: scale-down !important;
+}
+@media (max-width:629px) {
+  img#Beach3 {
+    display: none;
+  }
+}
+
+
+//***************Styling for hiding video *****************
+.hide {
+  display: none!important;
 }

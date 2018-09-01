@@ -203,7 +203,6 @@ b:hover {
 header.masthead {
   text-align: center;
   color: black;
-  background-image: url("../img/Cody Added/ocean1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -268,6 +267,11 @@ header.masthead .intro-text .intro-heading {
   color: #977532 !important;
 }
 
+.fullscreen-video-wrap {
+  -o-object-fit: cover !important;
+  object-fit: cover !important;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -277,13 +281,36 @@ header.masthead .intro-text .intro-heading {
   padding: 10px;
 }
 
-#disc {
-  height: 200px;
-  width: 200px;
-}
-
 #discgraph {
   padding: 10px !important;
+}
+
+.disc {
+  width: 375px !important;
+  height: 281px !important;
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.row_disc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column_disc1 {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.column_disc2 {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
 }
 
 #portfolio .portfolio-item {
@@ -543,7 +570,7 @@ header.masthead .intro-text .intro-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #1F5C5A;
   border-radius: 100%;
   background-color: #1F5C5A;
 }
@@ -807,4 +834,104 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .portfolio-modal .modal-content {
   padding: 20px 0 0 0 !important;
   background-color: #0c0c0c;
+}
+
+.burger {
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.burger {
+  margin-left: -50px !important;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+body {
+  background-color: #0c0c0c !important;
+}
+
+a {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+  color: #977532 !important;
+}
+
+a:hover {
+  color: #1F5C5A !important;
 }

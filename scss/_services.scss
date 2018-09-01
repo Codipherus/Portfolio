@@ -6,10 +6,28 @@
 #services2{
   padding:10px;
 }
-#disc{
-  height: 200px;
-  width: 200px;
-}
+// #discgraph{
+//   height: 200px;
+//   width: 200px;
+// }
 #discgraph{
   padding: 10px !important;
+}
+.disc{
+  width: 375px !important;
+  height: 281px !important;
+}
+.responsive{
+  width: 100%;
+  height: 100%;
+}
+.row_disc {
+  display: flex;
+}
+
+.column_disc1 {
+  flex: 50%;
+}
+.column_disc2 {
+  flex: 50%;
 }
