@@ -14,14 +14,15 @@ header.masthead {
     padding-bottom: 300px;
     position: absolute;
     top: 210px;
-    left: 20%;
+    
+    
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
       @include serif-font;
-      
+      margin-right: 20px;
       
     }
     .intro-heading {
@@ -30,6 +31,7 @@ header.masthead {
       line-height: 50px;
       margin-bottom: 25px;
       @include heading-font;
+      margin-right: 20px;
     }
   }
 }
